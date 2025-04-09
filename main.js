@@ -1,5 +1,5 @@
 //Переведіть текст виду border-left-width в borderLeftWidth
-let camelize = (word) => {
+const camelize = (word) => {
   let arr = word.split("-");
   let result = arr.map((item, index) => {
     if (index === 0) {
@@ -82,7 +82,7 @@ arr = [john, pete, mary];
 console.log(getAverageAge(arr));
 
 //Ланцюг викликів
-let ladder = {
+const ladder = {
   step: 0,
   up() {
     this.step++;
